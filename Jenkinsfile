@@ -1,10 +1,15 @@
 pipeline {
-  agent none
+  agent {
+    node {
+      label 'test'
+    }
+
+  }
   stages {
     stage('test1') {
       steps {
         echo '$test'
-        sh 'dir'
+        sh 'echo hello'
       }
     }
 

@@ -4,6 +4,7 @@ pipeline {
     stage('test1') {
       steps {
         echo '$test'
+        sh 'echo "Hello"'
       }
     }
 
